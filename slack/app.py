@@ -31,7 +31,7 @@ SLACK_BOT_USER_ID = os.environ["SLACK_BOT_USER_ID"]
 # Initialize the Slack app
 app = App(token=SLACK_BOT_TOKEN)
 signature_verifier = SignatureVerifier(SLACK_SIGNING_SECRET)
-
+# demo to show log
 # Initialize the Flask app
 flask_app = Flask(__name__)
 handler = SlackRequestHandler(app)
